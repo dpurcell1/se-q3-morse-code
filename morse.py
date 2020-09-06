@@ -10,7 +10,7 @@ Pause between dots and dashes in a character – is 1 time unit long.
 Pause between characters inside a word – is 3 time units long.
 Pause between words – is 7 time units long.
 """
-__author__ = """Darrell Purcell with help from Megan Ramey on Regex
+__author__ = """Darrell Purcell with help from Meagan Ramey on Regex
 https://docs.python.org/3/library/re.html
 https://www.w3schools.com/python/ref_string_strip.asp
 https://www.geeksforgeeks.org/python-infinity/"""
@@ -51,7 +51,7 @@ def decode_bits(bits):
     # returns 'E' morse code in case of 1-only strings
     if len(bits) == 1 or '0' not in bits:
         return '.'
-    # string leading or trailing zeroes from bits
+    # strip leading or trailing zeroes from bits
     if bits.startswith('0') or bits.endswith('0'):
         bits = bits.strip('0')
     # creates list of bits using zero as delimiter
